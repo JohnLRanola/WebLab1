@@ -29,6 +29,7 @@ body {
     flex-wrap: wrap;
     border: 1px solid black;
     width: 100%; 
+}
 
 .inner-grid div {
     flex: 1 0 50%;
@@ -55,7 +56,7 @@ body {
 
 @media screen and (max-width: 640px) {
     .grid {
-        flex-wrap: wrap;
+        flex-wrap: wrap; 
     }
 
     .cell {
@@ -63,7 +64,7 @@ body {
     }
 
     .cell:nth-child(n+2) {
-        margin-top: 1px;
+        margin-top: 1px; 
     }
 
     .inner-grid div {
