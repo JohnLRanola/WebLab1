@@ -3,3 +3,10 @@
     flex-wrap: wrap;
     border: 1px solid black;
 }
+
+.innerGrid {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    border: 1px solid black;
+}
