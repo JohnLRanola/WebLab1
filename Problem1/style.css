@@ -10,3 +10,10 @@
     width: 100%;
     border: 1px solid black;
 }
+
+.cell {
+    flex: 1 0 25%;
+    box-sizing: boder-box;
+    padding: 10px;
+    text-align: center;
+}
