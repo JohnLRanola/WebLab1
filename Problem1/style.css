@@ -1,19 +1,72 @@
-.grid {
-    display: flex;
-    flex-wrap: wrap;
-    border: 1px solid black;
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.innerGrid {
+.outer-grid {
     display: flex;
-    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.grid {
+    display: flex;
+    flex-wrap: nowrap;
     width: 100%;
     border: 1px solid black;
 }
 
 .cell {
     flex: 1 0 25%;
-    box-sizing: boder-box;
-    padding: 10px;
-    text-align: center;
+    border: 1px solid black;
+    box-sizing: border-box; 
+}
+
+.inner-grid {
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid black;
+    width: 100%; 
+
+.inner-grid div {
+    flex: 1 0 50%;
+    box-sizing: border-box; 
+}
+
+@media screen and (max-width: 960px) {
+    .grid {
+        flex-wrap: wrap; 
+    }
+
+    .cell {
+        flex: 1 0 50%; 
+    }
+
+    .cell:nth-child(n+3) {
+        margin-top: 1px; 
+    }
+
+    .inner-grid div {
+        flex: 1 0 50%;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .grid {
+        flex-wrap: wrap;
+    }
+
+    .cell {
+        flex: 1 0 100%; 
+    }
+
+    .cell:nth-child(n+2) {
+        margin-top: 1px;
+    }
+
+    .inner-grid div {
+        flex: 1 0 100%;
+    }
 }
