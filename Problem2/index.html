@@ -5,40 +5,32 @@
     </head>
 
     <body>
-
-        <div class="popup">
-            <div class="show-popup">
-                <div class="content">
-                    <header>
-                        <p>Add a new note here!</p>
-                    </header>
-                    <form action="#">
-                        <div class="row">
-                            <label>Title</label>
-                            <input type="text" id="input">
-                        </div>
-                        <div class="row-desc">
-                            <label for="">Description</label>
-                            <textarea name="" id=""></textarea>
-                        </div>
-                        <button class="add-note">Add Note</button>
-                    </form>
+        <div id="wrapper">
+            <div id="editor">
+                <h2 id="note-title">Create Note</h2>
+                <label>Title:</label>
+                <input type="text" id="title" name="title"/>
+                <label>Body:</label>
+                <textarea rows="20" cols="50" id="message" name="message">Enter text HERE!</textarea>
+                <label>Color:</label>
+                <select id="color" name="color">
+                    <option></option>
+                    <option></option>
+                    <option></option>
+                </select>
+                <div id="button">
+                    <button id="add">Create Note</button>
+                    <div id="error"></div>
                 </div>
             </div>
+
+            <div id="notes-sect">
+                <h2>Notes</h2>
+                <ul id="notes"></ul>
+            </div>
         </div>
-    <div class="wrapper">
-        <li class="add-box">
-            <div class="icon"></div>
-            <p>Add NEW NOTE</p>
-        </li>
 
-        <li class="note">
-            <div class="details"></div>
-            <p>This is a title</p>
-        </li>
-    </div>
-
-    <scripts src="java.js"></scripts>
+    <script src="java.js"></script>
     </body>
     
 </html>
