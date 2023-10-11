@@ -1,0 +1,2 @@
+-Added randomised colour background
+-Added so that each link goes to the cat wiki page
